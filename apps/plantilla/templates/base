@@ -1,0 +1,24 @@
+{% extends "grafo.html" %}	
+{% block content %}			
+				<div id="home" class="header">
+					<div class="top-header">
+						<div class="container">
+						<div class="logo">
+							<a href="#"><img src="static/images/andes3.png" title="uniandes" /></a>
+						</div>
+						<!----start-top-nav---->
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li><a href="#home" class="scroll">INICIO</a><span> </span></li>
+								<li><a href="#about" class="scroll">Grupo 2 </a></li>
+								<li><a href="#grafo">Talleres</a></li>
+								<li><a href="#work" class="scroll">Trabajo</a><span> </span></li>
+								<li><a href="#contact" class="scroll">Contacto</a></li>
+								<div class="clearfix"> </div>
+							</ul>
+							<a href="#" id="pull"><img src="static/images/nav-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+{% endblock %}

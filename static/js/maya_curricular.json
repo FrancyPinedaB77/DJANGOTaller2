@@ -1,0 +1,436 @@
+{
+    "links": [
+        {
+            "source": 0, 
+            "target": 1
+        }, 
+        {
+            "source": 1, 
+            "target": 2
+        },
+        {
+            "source": 2, 
+            "target": 3
+        },
+        {
+            "source": 3, 
+            "target": 4
+        },
+        {
+            "source": 4, 
+            "target": 5
+        },
+        {
+            "source": 5, 
+            "target": 6
+        },
+        {
+            "source": 6, 
+            "target": 7
+        },
+        {
+            "source": 8, 
+            "target": 9
+        },
+        {
+            "source": 9, 
+            "target": 10
+        },
+        {
+            "source": 10, 
+            "target": 11
+        },
+        {
+            "source": 11, 
+            "target": 12
+        },
+        {
+            "source": 12, 
+            "target": 13
+        },
+        {
+            "source": 13, 
+            "target": 14
+        },
+        {
+            "source": 8, 
+            "target": 15
+        },
+        {
+            "source": 15, 
+            "target": 9
+        },
+        {
+            "source": 9, 
+            "target": 16
+        },
+        {
+            "source": 16, 
+            "target": 17
+        },
+        {
+            "source": 10, 
+            "target": 17
+        },
+        {
+            "source": 17, 
+            "target": 18
+        },
+        {
+            "source": 19, 
+            "target": 19
+        },
+        {
+            "source": 20, 
+            "target": 20
+        },
+        {
+            "source": 21, 
+            "target": 22
+        },
+        {
+            "source": 15, 
+            "target": 22
+        },
+        {
+            "source": 9, 
+            "target": 23
+        },
+        {
+            "source": 23, 
+            "target": 24
+        },
+        {
+            "source": 24, 
+            "target": 25
+        },
+        {
+            "source": 25, 
+            "target": 26
+        },
+        {
+            "source": 18, 
+            "target": 26
+        },
+        {
+            "source": 27, 
+            "target": 28
+        },
+        {
+            "source": 28, 
+            "target": 29
+        },
+        {
+            "source": 29, 
+            "target": 30
+        },
+        {
+            "source": 30, 
+            "target": 31
+        },
+        {
+            "source": 23, 
+            "target": 32
+        },
+        {
+            "source": 32, 
+            "target": 33
+        },
+        {
+            "source": 32, 
+            "target": 25
+        },
+        {
+            "source": 26, 
+            "target": 34
+        },
+        {
+            "source": 35, 
+            "target": 36
+        },
+        {
+            "source": 36, 
+            "target": 37
+        },
+        {
+            "source": 37, 
+            "target": 38
+        },
+        {
+            "source": 38, 
+            "target": 33
+        },
+        {
+            "source": 7, 
+            "target": 39
+        },
+        {
+            "source": 14, 
+            "target": 39
+        },
+        {
+            "source": 26, 
+            "target": 39
+        },
+        {
+            "source": 34, 
+            "target": 39
+        },
+        {
+            "source": 19, 
+            "target": 39
+        },
+        {
+            "source": 20, 
+            "target": 39
+        },
+         {
+            "source": 31, 
+            "target": 39
+        }
+    ], 
+    "nodes": [
+        {
+            "id" : 0, 
+            "name": "Matematica General",
+            "Semestre": 0,
+            "Creditos": 0
+        }, 
+        {
+            "id" : 1, 
+            "name": "Matematica Discreta",
+            "Semestre": 1,
+            "Creditos": 4
+        },
+        {
+            "id" : 2, 
+            "name": "Calculo",
+            "Semestre": 2,
+            "Creditos": 4
+        },
+        {
+            "id" : 3, 
+            "name": "Algebra Lineal",
+            "Semestre": 3,
+            "Creditos": 4
+        },
+        {
+            "id" : 4, 
+            "name": "Probabilidad",
+            "Semestre": 4,
+            "Creditos": 4
+        },
+        {
+            "id" : 5, 
+            "name": "Estadistica",
+            "Semestre": 5,
+            "Creditos": 4
+        },
+        {
+            "id" : 6, 
+            "name": "Investigacion de Operaciones",
+            "Semestre": 6,
+            "Creditos": 4
+        },
+        {
+            "id" : 7, 
+            "name": "Inteligencia Artificial",
+            "Semestre": 7,
+            "Creditos": 4
+        },
+         {
+            "id" : 8, 
+            "name": "Introduccion a la programacion",
+            "Semestre": 1,
+            "Creditos": 3
+        },
+        {
+            "id" : 9, 
+            "name": "estructuras de Datos",
+            "Semestre": 2,
+            "Creditos": 4
+        },
+        {
+            "id" : 10, 
+            "name": "Analisis de Algoritmos",
+            "Semestre": 3,
+            "Creditos": 4
+        },
+        {
+            "id" : 11, 
+            "name": "Lenguajes de Programacion",
+            "Semestre": 4,
+            "Creditos": 4
+        },
+        {
+            "id" : 12, 
+            "name": "Compiladores e Interpretes",
+            "Semestre": 5,
+            "Creditos": 4
+        },
+        {
+            "id" : 13, 
+            "name": "Principio de sistemas Operativos",
+            "Semestre": 6,
+            "Creditos": 4
+        },
+        {
+            "id" : 14, 
+            "name": "Redes",
+            "Semestre": 7,
+            "Creditos": 4
+        },
+         {
+            "id" : 15, 
+            "name": "Taller de programacion",
+            "Semestre": 1,
+            "Creditos": 3
+        },
+        {
+            "id" : 16, 
+            "name": "Programacion orientada a objetos",
+            "Semestre": 2,
+            "Creditos": 3
+        },
+        {
+            "id" : 17, 
+            "name": "Bases de Datos",
+            "Semestre": 3,
+            "Creditos": 4
+        },
+        {
+            "id" : 18, 
+            "name": "Bases de Datos II",
+            "Semestre": 4,
+            "Creditos": 3
+        },
+        {
+            "id" : 19, 
+            "name": "Electiva I",
+            "Semestre": 6,
+            "Creditos": 3
+        },
+        {
+            "id" : 20, 
+            "name": "Electiva II",
+            "Semestre": 7,
+            "Creditos": 3
+        },
+        {
+            "id" : 21, 
+            "name": "Findamentos de Organizacion de Computadores",
+            "Semestre": 1,
+            "Creditos": 3
+        },
+        {
+            "id" : 22, 
+            "name": "Arquitectura de computadores",
+            "Semestre": 2,
+            "Creditos": 4
+        },
+        {
+            "id" : 23, 
+            "name": "Requerimientos de Software",
+            "Semestre": 4,
+            "Creditos": 4
+        },
+        {
+            "id" : 24, 
+            "name": "Diseño de Software",
+            "Semestre": 5,
+            "Creditos": 4
+        },
+        {
+            "id" : 25, 
+            "name": "Aseguramiento de la calidad del Software",
+            "Semestre": 6,
+            "Creditos": 3
+        },
+        {
+            "id" : 26, 
+            "name": "Proyecto de Ingenieria del Software",
+            "Semestre": 7,
+            "Creditos": 3
+        },
+        {
+            "id" : 27, 
+            "name": "Ingles basico",
+            "Semestre": 0,
+            "Creditos": 0
+        },
+        {
+            "id" : 28, 
+            "name": "Ingles I",
+            "Semestre": 1,
+            "Creditos": 3
+        },
+        {
+            "id" : 29, 
+            "name": "Ingles II",
+            "Semestre": 2,
+            "Creditos": 3
+        },
+        {
+            "id" : 30, 
+            "name": "Ingles III",
+            "Semestre": 3,
+            "Creditos": 3           
+        },
+        {
+            "id" : 31, 
+            "name": "Ingles IV",
+            "Semestre": 4,
+            "Creditos": 3
+        },
+        {
+            "id" : 32, 
+            "name": "Administracion de Proyectos",
+            "Semestre": 5,
+            "Creditos": 4
+        },
+        {
+            "id" : 33, 
+            "name": "Computación y Sociedad",
+            "Semestre": 6,
+            "Creditos": 2
+        },
+        {
+            "id" : 34, 
+            "name": "Desarrollo de emprendedores",
+            "Semestre": 7,
+            "Creditos": 4
+        },
+        {
+            "id" : 35, 
+            "name": "Comunicación Tecnica",
+            "Semestre": 1,
+            "Creditos": 2
+        },
+        {
+            "id" : 36, 
+            "name": "Ambiente Humano",
+            "Semestre": 3,
+            "Creditos": 2
+        },
+        {
+            "id" : 37, 
+            "name": "Seminario EFH",
+            "Semestre": 5,
+            "Creditos": 2
+        },
+        {
+            "id" : 38, 
+            "name": "Seminario EC",
+            "Semestre": 6,
+            "Creditos": 2
+        },
+        {
+            "id" : 39, 
+            "name": "Practica",
+            "Semestre": 8,
+            "Creditos": 12
+        }
+        
+        
+    ]
+}
