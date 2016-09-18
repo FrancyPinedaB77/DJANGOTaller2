@@ -164,7 +164,7 @@ var svg = d3.select("body").append("svg")
 var link = svg.selectAll(".link"),
     node = svg.selectAll(".node");
       
-d3.json("static/js/graph.json", function(error, json) {
+d3.json("static/js/graph.json", function(error, json) { /*Cargando el archivo json*/
   if (error) throw error;
 //alert('ENTRA HASTA AQUI');
   root = json;
@@ -188,7 +188,7 @@ function update() {
   link.exit().remove();
 
   link.enter().insert("line", ".node")
-      .attr("class", "link");
+      .attr("class", "link");/*quitando link me quiata las lineas que une los nodos*/
 
   // Update nodes.
   node = node.data(nodes, function(d) { return d.id; });
@@ -196,16 +196,16 @@ function update() {
   node.exit().remove();
 
   var nodeEnter = node.enter().append("g")
-      .attr("class", "node")
+      .attr("class", "")  /*Quitando el node inicial quita los bordes y la letra determinada*/
       .on("click", click)
       .call(force.drag);
 
   nodeEnter.append("circle")
       //.attr("r", function(d) { return Math.sqrt(d.size) / 5 || 7.5; });/*tAMAÑOS DE ALGUNOS CIRCULOS 10 Y 4.5*/
-      .attr("r", function(d) { return Math.sqrt(600); });/*tAMAÑOS DE ALGUNOS CIRCULOS 10 Y 4.5*/
+      .attr("r", function(d) { return Math.sqrt(300); });/*tAMAÑOS DE ALGUNOS CIRCULOS 10 Y 4.5*/
 
   nodeEnter.append("text")
-      .attr("dy", ".35em")// TAMAÑO INICIAL 35 
+      .attr("dy", ".100em")// TAMAÑO INICIAL 35 
       .text(function(d) { return d.name; });
 
   node.select("circle")

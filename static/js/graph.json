@@ -6,19 +6,22 @@
    "children": [
     {
      "name": "Colombia","children": [
-      {"name": "Shakira", "size": 3938},
-      {"name": "Paola", "size": 3812},
-      {"name": "Martin", "size": 6714},
-      {"name": "Francy", "size": 743}
+      {"name": "Shakira", "size": 1},
+      {"name": "Paola", "size": 1},
+      {"name": "Martin", "size": 1},
+      {"name": "Shakira", "size": 1},
+      {"name": "Paola", "size": 1},
+      {"name": "Martin", "size": 1},
+      {"name": "Francy", "size": 1}
      ]
     },
     {
      "name": "OTRO CAMBIO 2","children": [
-      {"name": "a", "size": 3534},
-      {"name": "b", "size": 5731},
-      {"name": "c", "size": 7840},
-      {"name": "b", "size": 5914},
-      {"name": "a", "size": 3416}
+      {"name": "a", "size": 1},
+      {"name": "b", "size": 1},
+      {"name": "c", "size": 1},
+      {"name": "b", "size": 1},
+      {"name": "a", "size": 1}
      ]
     },
     {
