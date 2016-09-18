@@ -60,6 +60,6 @@
 /*define el color de la linea */
 line.link {
   fill: none;
-  stroke: #FF4000; /*define color naranja*/
+  stroke: #6A0888; /*DEFINE EL COLOR PARA LAS LINEAS QUE UNEN A LOS NODOS */
   stroke-width: 1.5px;
 }

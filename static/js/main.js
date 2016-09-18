@@ -164,8 +164,8 @@ var svg = d3.select("body").append("svg")
 var link = svg.selectAll(".link"),
     node = svg.selectAll(".node");
       
-d3.json("static/js/graph.json", function(error, json) { /*Cargando el archivo json*/
-  if (error) throw error;
+d3.json("static/js/graph.json", function(archivo, json) { /*Cargando el archivo json*/
+  if (archivo) throw archivo;
 //alert('ENTRA HASTA AQUI');
   root = json;
   update();
@@ -188,7 +188,7 @@ function update() {
   link.exit().remove();
 
   link.enter().insert("line", ".node")
-      .attr("class", "link");/*quitando link me quiata las lineas que une los nodos*/
+      .attr("class", "link");/*quitando link me quita las lineas que une los nodos*/
 
   // Update nodes.
   node = node.data(nodes, function(d) { return d.id; });
@@ -202,7 +202,7 @@ function update() {
 
   nodeEnter.append("circle")
       //.attr("r", function(d) { return Math.sqrt(d.size) / 5 || 7.5; });/*tAMAÑOS DE ALGUNOS CIRCULOS 10 Y 4.5*/
-      .attr("r", function(d) { return Math.sqrt(300); });/*tAMAÑOS DE ALGUNOS CIRCULOS 10 Y 4.5*/
+   .attr("r", function(d) { return Math.sqrt(300); });/*DEFINE EL TAMAÑO DE TODOS LOS NODOS*/
 
   nodeEnter.append("text")
       .attr("dy", ".100em")// TAMAÑO INICIAL 35 
@@ -223,9 +223,9 @@ function tick() {
 //
 function color(d) {
   return d._children ? "#FF0080" // collapsed package  COLOR ROSADO
-      : d.children ? "#F7FE2E" // expanded package   DEFINE EL COLOR amarillo  DE ALGUNOS CIRCULOS
-      : "#00FFFF"; // leaf node  //COLOR AZUL CLARO DEFINE EL COLOR DE OTROS CIRCULOS
-}
+      : d.children ? "#B40431" // expanded package   DEFINE EL COLOR PARA LOS NODOS EN COMUN  DE ALGUNOS CIRCULOS
+      : "#0B610B"; // leaf node  //COLOR AZUL para los demas cirulos
+  }
 
 // Toggle children on click.
 function click(d) {
