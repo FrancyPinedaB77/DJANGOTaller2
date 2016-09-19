@@ -4,4 +4,5 @@ output = open("C:\\Users\\ASUS\\Desktop\\Downloads\\Taller1BigData-master\\Talle
 for line in input:
     x = line.split(",")
 
-    print(x[0], "nacio", x[2])
+    print(x[0],x[1])
+    print ("{","name:",x[0],"children:[", "fecha",x[1],"pais",x[2],"},")
