@@ -1,6 +1,27 @@
+//TRAYENDO LOS DATOS DE LAS CASILLAS 
+function confirmInput() {
+	caja = document.forms[0].caja.value;
+	alert("Hello " + caja  );
+    
+}
+//AQUI TERMINAN LOS CAMBIOS AÑADIDOS 
+
+
+
+
 //FUNCION PARA EL GRAFOO FINAL 
  function ejemplo(){
 //TAMALOS INICIALES 960 Y 500 DEFINE ESPACIO DE TRABAJO
+
+//AQUI TERMINAN LOS CAMBIOS AÑADIDOS 
+n1 = document.forms[0].n1.value;
+alert(n1);
+
+
+//FUNCION PARA EL GRAFOO FINAL 
+
+
+
 var width = 1200,
     height = 600,
     root;
@@ -27,7 +48,7 @@ d3.json("static/js/graph.json", function(archivo, json) { /*Cargando el archivo 
   update();
 });
 
-function update() {
+function update() { //FUNCION PARA GRAFICAR 
 
   var nodes = flatten(root),
       links = d3.layout.tree().links(nodes);
