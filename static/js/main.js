@@ -1,7 +1,7 @@
 //TRAYENDO LOS DATOS DE LAS CASILLAS 
 function confirmInput() {
 	caja = document.forms[0].caja.value;
-	alert("Hello " + caja  );
+	//alert("Hello " + caja  );
     
 }
 //AQUI TERMINAN LOS CAMBIOS AÑADIDOS 
@@ -15,7 +15,7 @@ function confirmInput() {
 
 //AQUI TERMINAN LOS CAMBIOS AÑADIDOS 
 n1 = document.forms[0].n1.value;
-alert(n1);
+//alert("Hello " + n1  );
 
 
 //FUNCION PARA EL GRAFOO FINAL 
@@ -35,15 +35,20 @@ var force = d3.layout.force()
 
 
 var svg = d3.select("body").append("svg")
-    .attr("width", width)
-    .attr("height", height);
+    .attr("width", 1200)
+    .attr("height", 600);// aqui se define el ancho y el alto 
 
 var link = svg.selectAll(".link"),
     node = svg.selectAll(".node");
+
+//
+
+
+//
+
       
 d3.json("static/js/graph.json", function(archivo, json) { /*Cargando el archivo json*/
   if (archivo) throw archivo;
-//alert('ENTRA HASTA AQUI');
   root = json;
   update();
 });
@@ -51,7 +56,7 @@ d3.json("static/js/graph.json", function(archivo, json) { /*Cargando el archivo 
 function update() { //FUNCION PARA GRAFICAR 
 
   var nodes = flatten(root),
-      links = d3.layout.tree().links(nodes);
+  	  links = d3.layout.tree().links(nodes);// quitando nodes
 
   // Restart the force layout.
   force
@@ -60,7 +65,7 @@ function update() { //FUNCION PARA GRAFICAR
       .start();
 
   // Update links.
-  link = link.data(links, function(d) { return d.target.id; });
+  link = link.data(links, function(d) { return d.target.id; });//target
 
   link.exit().remove();
 
@@ -79,7 +84,7 @@ function update() { //FUNCION PARA GRAFICAR
 
   nodeEnter.append("circle")
       //.attr("r", function(d) { return Math.sqrt(d.size) / 5 || 7.5; });/*tAMAÑOS DE ALGUNOS CIRCULOS 10 Y 4.5*/
-   .attr("r", function(d) { return Math.sqrt(300); });/*DEFINE EL TAMAÑO DE TODOS LOS NODOS*/
+   .attr("r", function(d) { return Math.sqrt(150); });/*DEFINE EL TAMAÑO DE TODOS LOS NODOS*/
 
   nodeEnter.append("text")
       .attr("dy", ".100em")// TAMAÑO INICIAL 35 
@@ -99,21 +104,21 @@ function tick() {
 }
 //
 function color(d) {
-  return d._children ? "#FF0080" // collapsed package  COLOR ROSADO
-      : d.children ? "#B40431" // expanded package   DEFINE EL COLOR PARA LOS NODOS EN COMUN  DE ALGUNOS CIRCULOS
+  return d._nino ? "#FF0080" // collapsed package  COLOR ROSADO
+      : d.nino ? "#B40431" // expanded package   DEFINE EL COLOR PARA LOS NODOS EN COMUN  DE ALGUNOS CIRCULOS
       : "#0B610B"; // leaf node  //COLOR AZUL para los demas cirulos
   }
 
 // Toggle children on click.
 function click(d) {
   if (d3.event.defaultPrevented) return; // ignore drag
-  if (d.children) {
-    d._children = d.children;
-    d.children = null;
-  } else {
-    d.children = d._children;
-    d._children = null;
-  }
+  // if (d.children) {
+  //   d._children = d.children;
+  //   d.children = null;
+  // } else {
+  //   d.children = d._children;
+  //   d._children = null;
+  // }
   update();
 }
 
@@ -122,7 +127,7 @@ function flatten(root) {
   var nodes = [], i = 0;
 
   function recurse(node) {
-    if (node.children) node.children.forEach(recurse);
+    if (node.children) node.children.forEach(recurse);// quintando children 
     if (!node.id) node.id = ++i;
     nodes.push(node);
   }

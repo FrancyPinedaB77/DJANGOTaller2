@@ -1,30 +1,7 @@
-import simplejson
-import json
+input =  open("C:\\Users\\ASUS\\Desktop\\Downloads\\Taller1BigData-master\\Taller1BigData-master\\static\\js\\salida.txt","r")
+output = open("C:\\Users\\ASUS\\Desktop\\Downloads\\Taller1BigData-master\\Taller1BigData-master\\static\\js\\myjson.txt","w")
 
-def put(data, filename):
-	try:
-		jsondata = simplejson.dumps(data, indent=4, skipkeys=True, sort_keys=True)
-		fd = open(filename, 'w')
-		fd.write(jsondata)
-		fd.close()
-	except:
-		print 'ERROR writing', filename
-		pass
+for line in input:
+    x = line.split(",")
 
-def get(filename):
-	returndata = {}
-	try:
-		fd = open(filename, 'r')
-		text = fd.read()
-		fd.close()
-		returndata = json.read(text)
-		# Hm.  this returns unicode keys...
-		#returndata = simplejson.loads(text)
-	except: 
-		print 'COULD NOT LOAD:', filename
-	return returndata
-
-if __name__ == '__main__':
-	o = get(sys.argv[1]);
-	if o:
-		put(o, sys.argv[1]);
+    print(x[0], "nacio", x[2])
