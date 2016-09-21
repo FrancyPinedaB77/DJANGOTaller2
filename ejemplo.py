@@ -5,5 +5,23 @@ output = open("C:\\Users\\ASUS\\Desktop\\Downloads\\Taller1BigData-master\\Talle
 
 for line in input:
     x = line.split(",")
-    print (x[0],"nacio", x[1],x[2])
+    print ("{","name:",x[0],"children:[", "fecha",x[1,"]"])
+#
 
+  
+# Open the CSV
+
+
+
+#f = open( 'C:\Users\ASUS\Desktop\Downloads\Taller1BigData-master\Taller1BigData-master\static\js\datos.csv', 'rU' )
+# Change each fieldname to the appropriate field name. I know, so difficult.  
+#reader = csv.DictReader( f, fieldnames = ( "name","fecha","pais" ))
+# Parse the CSV into JSON  
+#out = json.dumps( [ row for row in reader ] )
+#print "JSON parsed!"
+# Save the JSON  
+#f = open( 'C:\Users\ASUS\Desktop\Downloads\Taller1BigData-master\Taller1BigData-master\static\js\myjson.json', 'w')
+#f.write(out)
+#print "JSON saved!"
+
+ armar un string y despues iteracion con cada line

@@ -4,6 +4,6 @@ from . import views
 
 urlpatterns = [
  	url(r'^$', views.inicio),
- 	 url(r'^grafo$', views.grafo),
+ 	 url(r'^grafo$', views.grafo, name='mygraph'),
 ]
 

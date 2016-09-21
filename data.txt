@@ -1,0 +1,5 @@
+James::nacio en 1976::Colombia
+Shakira::nacio en 1960::Colombia
+Nayro::nacio en 1979::Colombia
+Hugo Ch::nacio en::Venezuela
+Hugo Ch::murio en::Venezuela

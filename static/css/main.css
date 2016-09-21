@@ -4,6 +4,11 @@
 	width: 30%;
 }
 
+#migrafo {
+      width: 600px;
+      height: 400px;
+      border: 1px solid lightgray;
+
 .mi-item{
 	color: #FE2E9A;
 	background-color: #00FF00;
